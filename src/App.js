@@ -45,6 +45,7 @@ class App extends React.Component {
   };
 
   render() {
+    // 전체 리스트 todoItems
     var todoItems = this.state.items.length > 0 && (
       <Paper style={{ margin: 16 }}>
         <List>
