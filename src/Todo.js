@@ -44,6 +44,10 @@ class Todo extends React.Component {
     this.update(this.state.item);
   }
 
+  deleteEventHandler = () => {
+    this.delete(this.state.item)
+  }
+
   render() {
     const item = this.state.item;
     return (
@@ -74,7 +78,7 @@ class Todo extends React.Component {
         <ListItemSecondaryAction>
           <IconButton 
             aria-label="Delete Todo"
-            onClick={this.delete}
+            onClick={this.deleteEventHandler}
           >
             <DeleteOutlined />
           </IconButton>

@@ -9,11 +9,12 @@ export function call(api, method, request) {
         method: method
     };
 
+    console.log(request);
     if (request) {
         options.body = JSON.stringify(request);
     }
 
-    // fetch(url, {header, url, method})하면 reponse생성 => json화 => 
+    // fetch(url, {header, url, method, body})하면 reponse생성 => json화 => 
     // promise는 자바스크립트 비동기 처리에 사용되는 객체
     // promise.rejected(거부) : 처리가 실패로 끝난 상태
     // then 메소드는 해당 Promise 가 성공했을 때의 동작을 지정합니다. 인자로 함수를 받습니다.
