@@ -23,7 +23,7 @@ class AppRouter extends React.Component {
         <Router>
           <div>
             <Routes>
-              <Route path="/" exact={true} element={<App/>} />
+              <Route path="/" element={<App/>} />
               <Route path="/login" element={<Login/>} />
             </Routes>
           </div>
